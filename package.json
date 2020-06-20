@@ -1,0 +1,30 @@
+{
+  "name": "qq-miniprogram-api-typings",
+  "version": "1.0.0",
+  "description": "qq小程序类型定义文件",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinkaiyuan/qq-miniprogram-api-typings.git"
+  },
+  "keywords": [
+    "qq",
+    "mini",
+    "miniprogram",
+    "api",
+    "typeings",
+    "type"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qinkaiyuan/qq-miniprogram-api-typings/issues"
+  },
+  "homepage": "https://github.com/qinkaiyuan/qq-miniprogram-api-typings#readme",
+  "main": "./index.d.ts",
+  "types": "./index.d.ts",
+  "files": [
+    "README.md",
+    "index.d.ts",
+    "typings.json",
+    "types/"
+  ]
+}
