@@ -4264,6 +4264,7 @@ declare namespace QQMiniprogram {
   interface RequestPaymentOption {
     /** 随机字符串，长度为32个字符以下 */
     nonceStr: string
+    bargainor_id: string
     /** 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=*** */
     package: string
     /** 签名，具体签名方案参见 [小程序支付接口文档](https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=7_7&index=3) */
@@ -4347,8 +4348,8 @@ declare namespace QQMiniprogram {
 
   interface RequestSubscribeMessageOption {
     /** 需要订阅的消息模板的id的集合，一次调用最多可订阅3条消息（注意：iOS客户端7.0.6版本、Android客户端7.0.7版本之后的一次性订阅/长期订阅才支持多个模板消息，iOS客户端7.0.5版本、Android客户端7.0.6版本之前的一次订阅只支持一个模板消息）消息模板id在[微信公众平台(mp.weixin.qq.com)-功能-订阅消息]中配置 */
-    tmplIds: any[],
-    subscribe: boolean,
+    tmplIds: any[]
+    subscribe: boolean
     /** 接口调用结束的回调函数（调用成功、失败都会执行） */
     complete?: RequestSubscribeMessageCompleteCallback
     /** 接口调用失败的回调函数 */
